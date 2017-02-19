@@ -1,3 +1,6 @@
 class Character:
     def __init__(self):
-        pass
+
+        self.health = ''
+        self.name = ''
+        self.race = ''
