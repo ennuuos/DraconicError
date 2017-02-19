@@ -1,6 +1,5 @@
 class Attributes:
     def __init__(self):
-
         self.str = 10
         self.dex = 10
         self.con = 10
