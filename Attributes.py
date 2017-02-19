@@ -8,7 +8,7 @@ class Attributes:
         self.cha = 10
     @staticmethod
     def modifier(value):
-        return int(value / 2 - 5))
+        return int(value / 2 - 5)
 
     @staticmethod
     def proficiency(level):
