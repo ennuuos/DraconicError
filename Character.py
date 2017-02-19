@@ -1,5 +1,5 @@
 from CharacterApp import CharacterApp
-from Entities import Entity
+from Entity import Entity
 
 class Character(Entity):
     def __init__(self):
