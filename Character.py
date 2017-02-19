@@ -1,14 +1,15 @@
 from CharacterApp import CharacterApp
-from Entity import Entity as Entities
+from Entity import Entity
+from Classes import Levels
 
-class Character(Entities):
+class Character(Entitiy):
     def __init__(self):
-        Entities.__init__(self)
+        Entity.__init__(self)
 
         self.health = None
         self.name = None
         self.race = None
-        self.level = None
+        self.levels = Levels()
 
         self.app=CharacterApp(self)
 
