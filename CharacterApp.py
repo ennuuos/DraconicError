@@ -24,7 +24,7 @@ class CharacterApp:
             self.l_player = Label(self.top, text=self.character.player)
             self.l_player.grid(row = 1, column = 1)
 
-            self.l_proficiency = Label(self.top, text="PLevel:")
+            self.l_proficiency = Label(self.top, text="Level:")
             self.l_proficiency.grid(row = 2, column = 0)
 
             self.l_proficiency = Label(self.top, text=str(self.character.level) + "(+" + str(Attributes.proficiency(self.character.level)) + ")")
