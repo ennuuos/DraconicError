@@ -8,6 +8,7 @@ class Character(Entity):
         self.health = None
         self.name = None
         self.race = None
+        self.level = None
 
         self.app=CharacterApp(self)
 
