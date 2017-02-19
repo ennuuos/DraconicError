@@ -1,5 +1,3 @@
-from math import *
-
 class Attributes:
     def __init__(self):
         self.str = 10
@@ -10,4 +8,4 @@ class Attributes:
         self.cha = 10
     @staticmethod
     def modifier(value):
-        return int(floor(value / 2 - 5))
+        return int(value / 2 - 5))
