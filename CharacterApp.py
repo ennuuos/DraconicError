@@ -24,10 +24,10 @@ class CharacterApp:
             self.l_player = Label(self.top, text=self.character.player)
             self.l_player.grid(row = 1, column = 1)
 
-            self.l_proficiency = Label(self.top, text="Proficiency Bonus:")
+            self.l_proficiency = Label(self.top, text="PLevel:")
             self.l_proficiency.grid(row = 2, column = 0)
 
-            self.l_proficiency = Label(self.top, text=Attributes.proficiency(self.character.level))
+            self.l_proficiency = Label(self.top, text=str(self.character.level) + "(+" + str(Attributes.proficiency(self.character.level)) + ")")
             self.l_proficiency.grid(row = 2, column = 1)
 
             self.placeAttributes()
@@ -65,7 +65,7 @@ class CharacterApp:
         self.l_attrv.grid(row = 8, column = 1)
 
     def attrformat(self, ability):
-        return str(ability) + " (" + str(Attributes.modifier(ability)) + ')'
+        return str(ability) + " (" + ("+" if Attributes.modifier(ability) > 0 else "" ) + str(Attributes.modifier(ability)) + ')'
 
     def removewindow(self):
         self.top.destroy()

@@ -36,6 +36,9 @@ class App:
         self.characters[1].level = 6
         self.characters[2].level = 14
 
+        self.characters[0].attr.str = 3
+        self.characters[0].attr.dex = 17
+
 
 root = Tk()
 
