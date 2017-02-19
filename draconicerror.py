@@ -8,7 +8,7 @@ class App:
         self.init_data()
 
         self.f_main = Frame(master)
-        self.f_main.pack()
+        self.f_main.pack(fill=BOTH, expand=1)
 
         self.f_toolbar = Frame(self.f_main)
         self.f_toolbar.pack(side=TOP, fill=X)
@@ -24,9 +24,13 @@ class App:
             Character(),
             Character()
         ]
-        self.characters[0].name = "Tom"
-        self.characters[1].name = "Travis"
-        self.characters[2].name = "Liam"
+        self.characters[0].name = "Kerry"
+        self.characters[1].name = "Jonothan"
+        self.characters[2].name = "Azaroth, Destroyer of Gods and Devourer of Worlds"
+
+        self.characters[0].player = "Liam"
+        self.characters[1].player = "Travis"
+        self.characters[2].player = "Tom"
 
 
 root = Tk()
