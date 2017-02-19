@@ -32,6 +32,10 @@ class App:
         self.characters[1].player = "Travis"
         self.characters[2].player = "Tom"
 
+        self.characters[0].level = 1
+        self.characters[1].level = 6
+        self.characters[2].level = 14
+
 
 root = Tk()
 
