@@ -1,9 +1,9 @@
 from CharacterApp import CharacterApp
-from Entity import Entity
+from Entity import Entity as Entities
 
-class Character(Entity):
+class Character(Entities):
     def __init__(self):
-        Entity.__init__(self)
+        Entities.__init__(self)
 
         self.health = None
         self.name = None
