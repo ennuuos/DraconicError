@@ -9,3 +9,7 @@ class Attributes:
     @staticmethod
     def modifier(value):
         return int(value / 2 - 5))
+
+    @staticmethod
+    def proficiency(level):
+        return int((level-1)/4+2)
