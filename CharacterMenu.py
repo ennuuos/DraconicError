@@ -27,6 +27,8 @@ class CharacterMenu:
     def openCharacter(self, t):
         for character_index in self.ls_characters.curselection():
             self.character_list[character_index].startapp()
+
+            
     def openAll(self):
         for character in self.character_list:
             character.startapp()

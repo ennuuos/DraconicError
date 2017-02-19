@@ -19,7 +19,14 @@ class App:
         CharacterMenu(self.f_main, self.characters)
 
     def init_data(self):
-        self.characters = []
+        self.characters = [
+            Character(),
+            Character(),
+            Character()
+        ]
+        self.characters[0].name = "Tom"
+        self.characters[1].name = "Travis"
+        self.characters[2].name = "Liam"
 
 
 root = Tk()
